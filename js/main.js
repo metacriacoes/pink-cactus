@@ -12,7 +12,7 @@
     function toggleFlashlight(this){
         try{
             if(hasFlashlight){
-                this.innerHTML = "Flashlight (On)";
+                //this.innerHTML = "Flashlight (On)";
                 window.plugins.flashlight.toggle();
             }
         } catch(err) {
@@ -35,7 +35,7 @@
     }
 
     function init(){
-        console.log('init...')
+        console.log('init...');
         testFlashlight();
     }
 
