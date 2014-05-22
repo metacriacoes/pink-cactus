@@ -2,17 +2,16 @@
 (function(window, undefined){
     "use strict";
     var document = window.document,
-        hasFlashlight = false,
-        btnFlashlightElem;
+        hasFlashlight = false;
 
     function vibrate(num){
         navigator.notification.vibrate(num);
     }
 
-    function toggleFlashlight(this){
+    function toggleFlashlight(elem){
         try{
             if(hasFlashlight){
-                //this.innerHTML = "Flashlight (On)";
+                //elem.innerHTML = "Flashlight (On)";
                 window.plugins.flashlight.toggle();
             }
         } catch(err) {
