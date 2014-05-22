@@ -10,20 +10,28 @@
     }
 
     function toggleFlashlight(this){
-        if(hasFlashlight){
-            this.innerHTML = "Flashlight (On)";
-            window.plugins.flashlight.toggle();
+        try{
+            if(hasFlashlight){
+                this.innerHTML = "Flashlight (On)";
+                window.plugins.flashlight.toggle();
+            }
+        } catch(err) {
+            console.log('ERROR:',err);
         }
     }
 
     function testFlashlight(){
-        window.plugins.flashlight.available(function(isAvailable) {
-          if (isAvailable) {
-            hasFlashlight = true;
-          } else {
-            hasFlashlight = false;
-          }
-        });
+        try{
+            window.plugins.flashlight.available(function(isAvailable) {
+              if (isAvailable) {
+                hasFlashlight = true;
+              } else {
+                hasFlashlight = false;
+              }
+            });
+        } catch(err) {
+            console.log('ERROR:',err);
+        }
     }
 
     function init(){
