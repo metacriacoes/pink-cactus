@@ -35,8 +35,7 @@
     }
 
     function init(){
-        btnFlashlightElem = document.
-
+        console.log('init...')
         testFlashlight();
     }
 
