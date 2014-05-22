@@ -6,7 +6,7 @@
         id        = "com.metacriacoes.pink-cactus"
         version   = "0.0.1">
 
-    <name>Codename: pink-cactus</name>
+    <name>Pink Cactus</name>
     <description>(scratchpad of stuff in general)</description>
 
     <author href="http://metacriacoes.com" email="development@metacriacoes.com">Metacriações</author>
@@ -16,7 +16,6 @@
         The "device" permission is required for the 'deviceready' event.
     -->
     <feature name="http://api.phonegap.com/1.0/device" />
-
 
     <!--
         If you do not want any permissions to be added to your app, add the
