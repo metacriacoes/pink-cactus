@@ -1,18 +1,40 @@
 /* Javascript */
 (function(window, undefined){
-	"use strict";
-	var document = window.document;
+    "use strict";
+    var document = window.document,
+        hasFlashlight = false,
+        btnFlashlightElem;
 
-	function vibrate(num){
-		navigator.notification.vibrate(num);
-	}
+    function vibrate(num){
+        navigator.notification.vibrate(num);
+    }
 
-	function init(){
+    function toggleFlashlight(this){
+        if(hasFlashlight){
+            this.innerHTML = "Flashlight (On)";
+            window.plugins.flashlight.toggle();
+        }
+    }
 
-	}
+    function testFlashlight(){
+        window.plugins.flashlight.available(function(isAvailable) {
+          if (isAvailable) {
+            hasFlashlight = true;
+          } else {
+            hasFlashlight = false;
+          }
+        });
+    }
 
-	window.app = {
-		vibrate : vibrate
-	};
-	window.onload = init;
+    function init(){
+        btnFlashlightElem = document.
+
+        testFlashlight();
+    }
+
+    window.app = {
+        vibrate : vibrate,
+        toggleFlashlight : toggleFlashlight
+    };
+    window.onload = init;
 })(window);
