@@ -1,3 +1,5 @@
 /* CSS */
 
 body { font-family:monospace; font-size:10px; color:#333; }
+
+#debug { position:absolute; width:100%; background-color:rgba(0,0,0,0.7); color:#FFF; font-family:~monospace; font-size:1.1em; }
