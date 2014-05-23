@@ -14,7 +14,7 @@
             if(hasFlashlight){
                 elem.innerHTML = "Flashlight (On)";
                 window.plugins.flashlight.toggle();
-                debugLog(JSON.stringify(window.plugins.flashlight));
+                debugLog('something: '+JSON.stringify(window.plugins.flashlight));
             }
         } catch(err) {
             debugLog('ERROR: '+err.message);

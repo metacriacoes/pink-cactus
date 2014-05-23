@@ -1,5 +1,6 @@
 /* CSS */
 
 body { font-family:monospace; font-size:10px; color:#333; }
+button { margin:10px; }
 
 #debug { position:absolute; bottom:0; left:0; width:100%; background-color:rgba(0,0,0,0.7); color:#FFF; font-family:~monospace; font-size:1.1em; }
