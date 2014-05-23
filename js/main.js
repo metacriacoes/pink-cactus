@@ -1,7 +1,7 @@
 /* Javascript */
 (function(window, undefined){
     "use strict";
-    var document = window.document,,
+    var document = window.document,
         debugElem,
         hasFlashlight = false;
 
@@ -50,7 +50,7 @@
     }
 
     function debugLog(str){
-        debugElem.innerHTML += str.toString();
+        debugElem.innerHTML += str.toString()+'<br>';
     }
 
     function init(){
