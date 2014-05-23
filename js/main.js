@@ -12,9 +12,8 @@
     function toggleFlashlight(elem){
         try{
             if(hasFlashlight){
-                elem.innerHTML = "Flashlight (On)";
                 window.plugins.flashlight.toggle();
-                debugLog('something: '+JSON.stringify(window.plugins.flashlight));
+                elem.innerHTML = (window.plugins.flashlight._isSwitchedOn) ? "Flashlight (On)" : "Flashlight (Off)" ;
             }
         } catch(err) {
             debugLog('ERROR: '+err.message);
